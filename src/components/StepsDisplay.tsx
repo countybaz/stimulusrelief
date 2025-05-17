@@ -1,11 +1,12 @@
 import React from 'react';
 import { CheckCircle2, DollarSign, ShieldCheck } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
 const StepsDisplay = () => {
   return <div className="space-y-4 max-w-2xl mx-auto px-4">
       {/* Program Information */}
       
-
       {/* Steps Section - More compact on mobile */}
       <div className="grid gap-3">
         <h3 className="font-medium text-center">Follow These Steps:</h3>
@@ -21,19 +22,14 @@ const StepsDisplay = () => {
           
           <StepCard number="4" title="Receive your $1,400 Stimulus Check" description="Direct payment to qualified recipients" highlight />
         </div>
-      </div>
-      
-      {/* Disclaimer and CTA Button */}
-      <div className="text-center mt-4">
-        <div className="bg-gray-100 p-3 rounded-lg text-xs text-gray-600 text-center mb-4">
-          <ShieldCheck className="h-4 w-4 mx-auto mb-1 text-stimulus-blue" />
-          <p>This site is not affiliated with any government agency. Eligibility for assistance programs varies and results are subject to verification.</p>
+
+        {/* CTA Button moved directly after steps */}
+        <div className="text-center mt-2">
+          <button onClick={() => window.open('#', '_blank')} className="w-full sm:w-4/5 md:w-3/5 lg:w-2/5 bg-stimulus-green hover:bg-stimulus-green/90 text-white font-bold text-xl py-4 px-6 rounded-lg shadow-lg transition-all duration-300">
+            CHECK ELIGIBILITY NOW
+          </button>
+          <p className="text-xs text-gray-500 mt-2">Click to see if you qualify for the stimulus assistance program</p>
         </div>
-        
-        <button onClick={() => window.open('#', '_blank')} className="w-full sm:w-4/5 md:w-3/5 lg:w-2/5 bg-stimulus-green hover:bg-stimulus-green/90 text-white font-bold text-xl py-4 px-6 rounded-lg shadow-lg transition-all duration-300">
-          CHECK ELIGIBILITY NOW
-        </button>
-        <p className="text-xs text-gray-500 mt-2">Click to see if you qualify for the stimulus assistance program</p>
       </div>
       
       {/* Testimonials Section - Shortened for mobile */}
@@ -45,8 +41,18 @@ const StepsDisplay = () => {
           <TestimonialCard name="Jennifer Williams" location="Ohio" text="As a single mother of two, this stimulus check helped me catch up on bills and put food on the table. I'm incredibly grateful." />
         </div>
       </div>
+      
+      {/* Disclaimer moved to bottom of page */}
+      <div className="text-center mt-4">
+        <div className="bg-gray-100 p-3 rounded-lg text-xs text-gray-600 text-center mb-4">
+          <ShieldCheck className="h-4 w-4 mx-auto mb-1 text-stimulus-blue" />
+          <p>This site is not affiliated with any government agency. Eligibility for assistance programs varies and results are subject to verification.</p>
+        </div>
+      </div>
     </div>;
 };
+
+// StepCard component definition
 const StepCard = ({
   number,
   title,
@@ -106,4 +112,5 @@ const TestimonialCard = ({
       </div>
     </div>;
 };
+
 export default StepsDisplay;
