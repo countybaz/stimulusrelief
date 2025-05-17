@@ -53,6 +53,7 @@ const names = [
 export const NotificationToast = () => {
   const [notifications, setNotifications] = useState<Notification[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     // Shuffle the names array to get random order
@@ -64,22 +65,36 @@ export const NotificationToast = () => {
     }));
     
     setNotifications(initialNotifications);
+    
+    // Add initial delay before showing first notification
+    const initialDelay = setTimeout(() => {
+      setVisible(true);
+    }, 3000);
 
     // Set up the interval for showing new notifications
     const interval = setInterval(() => {
       setCurrentIndex(prev => (prev + 1) % initialNotifications.length);
-    }, 5000); // Show a new notification every 5 seconds
+      setVisible(true);
+      
+      // Hide the notification after 4 seconds
+      setTimeout(() => {
+        setVisible(false);
+      }, 4000);
+    }, 8000); // Show a new notification every 8 seconds
 
-    return () => clearInterval(interval);
+    return () => {
+      clearTimeout(initialDelay);
+      clearInterval(interval);
+    };
   }, []);
 
-  if (notifications.length === 0) return null;
+  if (notifications.length === 0 || !visible) return null;
 
   const currentNotification = notifications[currentIndex];
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 animate-notification-slide">
-      <div className="bg-white shadow-lg rounded-lg p-4 max-w-xs">
+    <div className="fixed bottom-4 right-4 z-40 animate-notification-slide">
+      <div className="bg-white shadow-lg rounded-lg p-4 max-w-xs border border-gray-100">
         <div className="flex items-center">
           <div className="bg-stimulus-green rounded-full p-1 mr-3">
             <Check className="h-4 w-4 text-white" />
