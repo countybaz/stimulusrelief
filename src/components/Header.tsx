@@ -1,14 +1,11 @@
-
 import React from 'react';
 import { DollarSign, ShieldCheck } from 'lucide-react';
-
 const Header = () => {
-  return (
-    <header className="bg-gradient-to-r from-stimulus-darkblue to-blue-900 py-4 px-4 shadow-md">
+  return <header className="bg-gradient-to-r from-stimulus-darkblue to-blue-900 py-4 px-4 shadow-md">
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-white">
           <div className="flex items-center justify-center">
-            <DollarSign className="h-6 w-6 mr-2 text-stimulus-green" />
+            
             <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center">
               $1,400 STIMULUS CHECKS AVAILABLE
             </h1>
@@ -24,8 +21,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;
