@@ -5,6 +5,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 const StepsDisplay = () => {
+  const handleCheckEligibility = () => {
+    window.open('https://glstrck.com/aff_c?offer_id=1421&aff_id=25969', '_blank');
+  };
+
   return <div className="space-y-4 max-w-2xl mx-auto px-4">
       {/* Program Information */}
       
@@ -26,7 +30,10 @@ const StepsDisplay = () => {
 
         {/* CTA Button moved directly after steps */}
         <div className="text-center mt-2">
-          <button onClick={() => window.open('#', '_blank')} className="w-full sm:w-4/5 md:w-3/5 lg:w-2/5 bg-stimulus-green hover:bg-stimulus-green/90 text-white font-bold text-xl py-4 px-6 rounded-lg shadow-lg transition-all duration-300">
+          <button 
+            onClick={handleCheckEligibility} 
+            className="w-full sm:w-4/5 md:w-3/5 lg:w-2/5 bg-stimulus-green hover:bg-stimulus-green/90 text-white font-bold text-xl py-4 px-6 rounded-lg shadow-lg transition-all duration-300"
+          >
             CHECK ELIGIBILITY NOW
           </button>
           <p className="text-xs text-gray-500 mt-2">Click to see if you qualify for the stimulus assistance program</p>
