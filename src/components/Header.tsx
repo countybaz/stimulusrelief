@@ -10,7 +10,7 @@ const Header = () => {
           <div className="flex items-center justify-center mb-2">
             <DollarSign className="h-6 w-6 mr-2 text-stimulus-green" />
             <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center font-sans">
-              $1,400 STIMULUS ASSISTANCE
+              2025 $1,400 STIMULUS ASSISTANCE RELIEF PROGRAM
             </h1>
           </div>
           
