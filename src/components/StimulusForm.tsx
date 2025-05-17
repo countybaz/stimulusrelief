@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useToast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
@@ -8,7 +7,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Dollar } from 'lucide-react';
+import { DollarSign } from 'lucide-react';
 
 interface FormData {
   firstName: string;
@@ -408,7 +407,7 @@ const StimulusForm = () => {
       <CardContent className="text-center">
         <div className="mb-6 flex justify-center">
           <div className="bg-stimulus-green/10 p-6 rounded-full">
-            <Dollar className="h-16 w-16 text-stimulus-green" />
+            <DollarSign className="h-16 w-16 text-stimulus-green" />
           </div>
         </div>
         
