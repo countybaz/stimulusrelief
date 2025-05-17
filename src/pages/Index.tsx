@@ -21,16 +21,6 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="px-4 mb-8">
-            <button 
-              onClick={() => window.open('#', '_blank')}
-              className="mx-auto block w-full sm:w-4/5 md:w-3/5 lg:w-2/5 bg-stimulus-green hover:bg-stimulus-green/90 text-white font-bold text-xl py-4 px-6 rounded-lg shadow-lg transition-all duration-300 animate-pulse"
-            >
-              CHECK ELIGIBILITY NOW
-            </button>
-            <p className="text-center text-xs mt-2 text-gray-500">Limited time offer - Check if you qualify</p>
-          </div>
-          
           <StepsDisplay />
         </div>
       </main>

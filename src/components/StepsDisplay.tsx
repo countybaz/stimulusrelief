@@ -34,8 +34,12 @@ const StepsDisplay = () => {
         />
       </div>
       
-      {/* CTA Button Bottom */}
+      {/* Disclaimer and CTA Button */}
       <div className="text-center my-6">
+        <div className="bg-gray-100 p-3 rounded-md text-xs text-gray-600 text-center mb-4">
+          This site is not affiliated with any government agency. Eligibility for assistance programs varies and results are subject to verification.
+        </div>
+        
         <button 
           onClick={() => window.open('#', '_blank')}
           className="w-full sm:w-4/5 md:w-3/5 lg:w-2/5 bg-stimulus-green hover:bg-stimulus-green/90 text-white font-bold text-xl py-4 px-6 rounded-lg shadow-lg transition-all duration-300"
@@ -65,10 +69,6 @@ const StepsDisplay = () => {
             text="As a single mother of two, this stimulus check helped me catch up on bills and put food on the table. I'm incredibly grateful."
           />
         </div>
-      </div>
-      
-      <div className="bg-gray-100 p-3 rounded-md text-xs text-gray-600 text-center my-4">
-        This site is not affiliated with any government agency. Eligibility for assistance programs varies and results are subject to verification.
       </div>
     </div>
   );
