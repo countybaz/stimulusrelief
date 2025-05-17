@@ -1,52 +1,25 @@
-
 import React from 'react';
 import { CheckCircle2, DollarSign, ShieldCheck } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
 const StepsDisplay = () => {
-  return (
-    <div className="space-y-4 max-w-2xl mx-auto px-4">
+  return <div className="space-y-4 max-w-2xl mx-auto px-4">
       {/* Program Information */}
-      <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-100 text-center">
-        <h3 className="text-lg font-medium mb-2">Official Stimulus Assistance Program</h3>
-        <p className="text-gray-700 text-sm">
-          The Stimulus Assistance Program provides eligible Americans with financial support 
-          of <span className="font-bold text-stimulus-green">$1,400</span> to help 
-          with essential expenses during difficult times.
-        </p>
-      </div>
+      
 
       {/* Steps Section - More compact on mobile */}
       <div className="grid gap-3">
         <h3 className="font-medium text-center">Follow These Steps:</h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <StepCard 
-            number="1"
-            title="Eligibility Check"
-            description="Confirm your qualification for the stimulus program"
-          />
+          <StepCard number="1" title="Eligibility Check" description="Confirm your qualification for the stimulus program" />
           
-          <StepCard 
-            number="2"
-            title="Identity Verification"
-            description="Secure verification process to protect your information"
-          />
+          <StepCard number="2" title="Identity Verification" description="Secure verification process to protect your information" />
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <StepCard 
-            number="3"
-            title="Application Review"
-            description="Your application is reviewed by our team"
-          />
+          <StepCard number="3" title="Application Review" description="Your application is reviewed by our team" />
           
-          <StepCard 
-            number="4"
-            title="Receive your $1,400 Stimulus Check"
-            description="Direct payment to qualified recipients"
-            highlight
-          />
+          <StepCard number="4" title="Receive your $1,400 Stimulus Check" description="Direct payment to qualified recipients" highlight />
         </div>
       </div>
       
@@ -57,10 +30,7 @@ const StepsDisplay = () => {
           <p>This site is not affiliated with any government agency. Eligibility for assistance programs varies and results are subject to verification.</p>
         </div>
         
-        <button 
-          onClick={() => window.open('#', '_blank')}
-          className="w-full sm:w-4/5 md:w-3/5 lg:w-2/5 bg-stimulus-green hover:bg-stimulus-green/90 text-white font-bold text-xl py-4 px-6 rounded-lg shadow-lg transition-all duration-300"
-        >
+        <button onClick={() => window.open('#', '_blank')} className="w-full sm:w-4/5 md:w-3/5 lg:w-2/5 bg-stimulus-green hover:bg-stimulus-green/90 text-white font-bold text-xl py-4 px-6 rounded-lg shadow-lg transition-all duration-300">
           CHECK ELIGIBILITY NOW
         </button>
         <p className="text-xs text-gray-500 mt-2">Click to see if you qualify for the stimulus assistance program</p>
@@ -70,35 +40,25 @@ const StepsDisplay = () => {
       <div className="mt-4">
         <h3 className="text-lg font-semibold mb-3 text-center">What People Are Saying</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-          <TestimonialCard 
-            name="Sarah Johnson"
-            location="Texas"
-            text="I was skeptical at first, but after applying I received my stimulus check within days. This program was a true lifesaver for our family."
-          />
-          <TestimonialCard 
-            name="Michael Rodriguez"
-            location="Florida"
-            text="The application process was incredibly simple. I filled out the form in under 10 minutes and received my $1,400 the following week."
-          />
-          <TestimonialCard 
-            name="Jennifer Williams"
-            location="Ohio"
-            text="As a single mother of two, this stimulus check helped me catch up on bills and put food on the table. I'm incredibly grateful."
-          />
+          <TestimonialCard name="Sarah Johnson" location="Texas" text="I was skeptical at first, but after applying I received my stimulus check within days. This program was a true lifesaver for our family." />
+          <TestimonialCard name="Michael Rodriguez" location="Florida" text="The application process was incredibly simple. I filled out the form in under 10 minutes and received my $1,400 the following week." />
+          <TestimonialCard name="Jennifer Williams" location="Ohio" text="As a single mother of two, this stimulus check helped me catch up on bills and put food on the table. I'm incredibly grateful." />
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
-const StepCard = ({ number, title, description, highlight = false }: { 
-  number: string; 
-  title: string; 
+const StepCard = ({
+  number,
+  title,
+  description,
+  highlight = false
+}: {
+  number: string;
+  title: string;
   description: string;
   highlight?: boolean;
 }) => {
-  return (
-    <Card className={`transition-all duration-300 ${highlight ? 'border-stimulus-green' : 'border-gray-200'} shadow-sm`}>
+  return <Card className={`transition-all duration-300 ${highlight ? 'border-stimulus-green' : 'border-gray-200'} shadow-sm`}>
       <CardHeader className="flex flex-row items-center gap-2 py-2 px-3">
         <div className={`${highlight ? 'bg-stimulus-green' : 'bg-stimulus-blue'} text-white w-6 h-6 rounded-full flex items-center justify-center text-sm font-semibold`}>
           {number}
@@ -112,21 +72,25 @@ const StepCard = ({ number, title, description, highlight = false }: {
       </CardHeader>
       <CardContent className="py-1 px-3 text-xs md:text-sm">
         <p className="text-gray-600">{description}</p>
-        {highlight && (
-          <div className="mt-1 flex items-center text-stimulus-green text-xs">
+        {highlight && <div className="mt-1 flex items-center text-stimulus-green text-xs">
             <DollarSign className="h-3 w-3 mr-1" />
             <span className="font-medium">Funds sent directly to eligible recipients</span>
-          </div>
-        )}
+          </div>}
       </CardContent>
-    </Card>
-  );
+    </Card>;
 };
 
 // Testimonial Card Component
-const TestimonialCard = ({ name, location, text }: { name: string; location: string; text: string }) => {
-  return (
-    <div className="bg-white border border-gray-100 rounded-lg p-3 shadow-sm">
+const TestimonialCard = ({
+  name,
+  location,
+  text
+}: {
+  name: string;
+  location: string;
+  text: string;
+}) => {
+  return <div className="bg-white border border-gray-100 rounded-lg p-3 shadow-sm">
       <div className="flex items-center mb-1">
         <div className="text-stimulus-green">
           <CheckCircle2 className="h-4 w-4" />
@@ -138,12 +102,8 @@ const TestimonialCard = ({ name, location, text }: { name: string; location: str
       </div>
       <p className="text-gray-600 text-xs md:text-sm">{text}</p>
       <div className="mt-1 flex">
-        {[1, 2, 3, 4, 5].map((star) => (
-          <span key={star} className="text-yellow-400 text-xs">★</span>
-        ))}
+        {[1, 2, 3, 4, 5].map(star => <span key={star} className="text-yellow-400 text-xs">★</span>)}
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default StepsDisplay;
