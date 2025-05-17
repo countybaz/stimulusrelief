@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				stimulus: {
+					green: '#25D366',
+					blue: '#0056b3',
+					darkblue: '#003366',
+					gray: '#f8f9fa',
+					darkgray: '#343a40'
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,18 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'notification-slide': {
+					'0%': { transform: 'translateX(100%)' },
+					'10%': { transform: 'translateX(0)' },
+					'90%': { transform: 'translateX(0)' },
+					'100%': { transform: 'translateX(100%)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'notification-slide': 'notification-slide 8s ease-in-out infinite'
 			}
 		}
 	},
