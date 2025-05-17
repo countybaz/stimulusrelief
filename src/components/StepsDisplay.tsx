@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { CheckCircle2, DollarSign, ShieldCheck } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -42,8 +43,16 @@ const StepsDisplay = () => {
         </div>
       </div>
       
-      {/* Disclaimer moved to bottom of page */}
-      <div className="text-center mt-4">
+      {/* Security notice moved to bottom of page */}
+      <div className="mt-4 flex justify-center">
+        <div className="flex items-center bg-blue-50 px-4 py-2 rounded-md text-sm border border-blue-100 max-w-md">
+          <ShieldCheck className="h-4 w-4 mr-2 text-stimulus-blue flex-shrink-0" />
+          <span className="text-gray-700">Secure Eligibility Check • Limited Time Program</span>
+        </div>
+      </div>
+      
+      {/* Disclaimer at the bottom of page */}
+      <div className="text-center mt-2">
         <div className="bg-gray-100 p-3 rounded-lg text-xs text-gray-600 text-center mb-4">
           <ShieldCheck className="h-4 w-4 mx-auto mb-1 text-stimulus-blue" />
           <p>This site is not affiliated with any government agency. Eligibility for assistance programs varies and results are subject to verification.</p>

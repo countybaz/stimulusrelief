@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { DollarSign, ShieldCheck } from 'lucide-react';
+import { DollarSign } from 'lucide-react';
 
 const Header = () => {
   return (
@@ -11,19 +11,14 @@ const Header = () => {
             <div className="bg-stimulus-blue rounded-full p-2 mr-3">
               <DollarSign className="h-5 w-5 text-white" />
             </div>
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center font-sans text-gray-800">
-              2025 <span className="text-stimulus-green">$1,400</span> STIMULUS ASSISTANCE RELIEF PROGRAM
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center font-sans text-gray-800 tracking-tight">
+              2025 <span className="text-stimulus-green font-black">$1,400</span> STIMULUS ASSISTANCE RELIEF PROGRAM
             </h1>
           </div>
           
           <p className="text-sm sm:text-base mt-1 text-center max-w-xl text-gray-600">
             Helping eligible Americans with groceries, rent, and everyday expenses
           </p>
-          
-          <div className="mt-2 flex items-center bg-blue-50 px-4 py-2 rounded-md text-sm border border-blue-100">
-            <ShieldCheck className="h-4 w-4 mr-2 text-stimulus-blue" />
-            <span className="text-gray-700">Secure Eligibility Check • Limited Time Program</span>
-          </div>
         </div>
       </div>
     </header>
