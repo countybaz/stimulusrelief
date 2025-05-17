@@ -20,13 +20,12 @@ const Footer = () => {
             reliability, availability or completeness of any information on the site.
           </p>
           
+          <p className="font-medium">
+            This site is not affiliated with any government agency. Eligibility for assistance programs varies and results are subject to verification.
+          </p>
+          
           <div className="border-t border-gray-200 pt-4">
             <p>&copy; {currentYear} Stimulus Support. All rights reserved.</p>
-            <div className="mt-2 flex justify-center space-x-4">
-              <a href="#" className="hover:text-gray-700">Privacy Policy</a>
-              <a href="#" className="hover:text-gray-700">Terms of Service</a>
-              <a href="#" className="hover:text-gray-700">Contact Us</a>
-            </div>
           </div>
         </div>
       </div>
