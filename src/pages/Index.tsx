@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Header from '@/components/Header';
-import StimulusForm from '@/components/StimulusForm';
+import StepsDisplay from '@/components/StepsDisplay';
 import NotificationToast from '@/components/NotificationToast';
 import Footer from '@/components/Footer';
 
@@ -15,13 +15,13 @@ const Index = () => {
           <div className="text-center mb-8 px-4">
             <h2 className="text-xl sm:text-2xl font-semibold mb-4">Apply for your stimulus assistance today</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Complete the following steps to determine your eligibility and apply for your 
+              Follow these simple steps to determine your eligibility and apply for your 
               <span className="text-stimulus-green font-bold"> $1,400 </span> 
               stimulus payment.
             </p>
           </div>
           
-          <StimulusForm />
+          <StepsDisplay />
         </div>
       </main>
       
