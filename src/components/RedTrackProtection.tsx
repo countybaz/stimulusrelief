@@ -17,8 +17,8 @@ const RedTrackProtection: React.FC<RedTrackProtectionProps> = ({ secretKey, chil
     const lpkeyua = urlParams.get('lpkeyua');
     
     if (!lpkeyua) {
-      // Redirect to 404 if no key provided
-      navigate('*', { replace: true });
+      // Redirect to NotFound page if no key provided
+      navigate('/404', { replace: true });
       return;
     }
     
@@ -35,12 +35,12 @@ const RedTrackProtection: React.FC<RedTrackProtectionProps> = ({ secretKey, chil
       const isExpired = Date.now() / 1000 > hashTime;
       
       if (!isValidHash || isExpired) {
-        // Redirect to 404 if validation fails
-        navigate('*', { replace: true });
+        // Redirect to NotFound page if validation fails
+        navigate('/404', { replace: true });
       }
     } catch (error) {
       console.error('Error validating RedTrack protection:', error);
-      navigate('*', { replace: true });
+      navigate('/404', { replace: true });
     }
     
   }, [secretKey, navigate]);
