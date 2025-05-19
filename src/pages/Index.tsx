@@ -8,7 +8,7 @@ import RedTrackProtection from '@/components/RedTrackProtection';
 
 const Index = () => {
   // In a real app, you would set this from an environment variable or a secure source
-  const redTrackKey = ""; // Insert your actual secret key here
+  const redTrackKey = "YOUR_SECRET_KEY"; // Replace with your actual secret key
   
   // Check if we're in development mode
   const isDevelopment = process.env.NODE_ENV === 'development';
