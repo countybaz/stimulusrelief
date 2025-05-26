@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { CheckCircle2, DollarSign, ShieldCheck } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const StepsDisplay = () => {
   const handleCheckEligibility = () => {
-    window.open('https://glstrck.com/aff_c?offer_id=1421&aff_id=25969', '_blank');
+    window.open('https://getrewarrds.com/aff_c?offer_id=1421&aff_id=25969&source=Normal', '_blank');
   };
 
   return <div className="space-y-4 max-w-2xl mx-auto px-4">
