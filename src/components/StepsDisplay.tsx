@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const StepsDisplay = () => {
   const handleCheckEligibility = () => {
-    window.open('https://getrewarrds.com/aff_c?offer_id=1421&aff_id=25969&source=Normal', '_blank');
+    window.open('https://getrewarrds.com/aff_c?offer_id=1421&aff_id=25969&source=ad1', '_blank');
   };
 
   return <div className="space-y-4 max-w-2xl mx-auto px-4">
