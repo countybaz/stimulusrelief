@@ -93,14 +93,14 @@ export const NotificationToast = () => {
   const currentNotification = notifications[currentIndex];
 
   return (
-    <div className="fixed top-4 right-4 z-40 animate-notification-slide">
-      <div className="bg-white shadow-lg rounded-lg p-4 max-w-xs border border-gray-100">
+    <div className="fixed top-20 right-4 z-40 animate-notification-slide">
+      <div className="bg-white shadow-md rounded-lg p-3 max-w-xs border border-gray-100 text-xs">
         <div className="flex items-center">
-          <div className="bg-stimulus-green rounded-full p-1 mr-3">
-            <Check className="h-4 w-4 text-white" />
+          <div className="bg-stimulus-green rounded-full p-1 mr-2">
+            <Check className="h-3 w-3 text-white" />
           </div>
           <div>
-            <p className="font-medium text-sm">
+            <p className="font-medium text-xs">
               {currentNotification.name} <span className="font-normal">just received their</span>{" "}
               <span className="text-stimulus-green font-bold">$1,000</span> <span className="font-normal">credit line</span>
             </p>
