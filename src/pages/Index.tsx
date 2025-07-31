@@ -13,11 +13,11 @@ const Index = () => {
       <main className="flex-grow py-2">
         <div className="container mx-auto">
           <div className="text-center mb-2 px-4"></div>
+          <NotificationToast />
           <StepsDisplay />
           <FAQ />
         </div>
       </main>
-      <NotificationToast />
       <Footer />
     </div>
   );
