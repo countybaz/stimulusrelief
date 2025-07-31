@@ -117,8 +117,8 @@ const StimulusForm = () => {
     return (
       <Card className="w-full mb-8">
         <CardHeader className="text-center">
-          <CardTitle className="text-2xl">4. Receive your <span className="text-stimulus-green font-bold">$1,400</span> Stimulus Check</CardTitle>
-          <CardDescription>Direct payment to eligible recipients</CardDescription>
+          <CardTitle className="text-2xl">4. Receive your <span className="text-stimulus-green font-bold">$1,000</span> Credit Line</CardTitle>
+          <CardDescription>Direct credit line access to eligible recipients</CardDescription>
         </CardHeader>
         <CardContent className="text-center">
           <div className="mb-6 flex justify-center">
@@ -129,7 +129,7 @@ const StimulusForm = () => {
           
           <h3 className="text-xl font-semibold mb-2">Congratulations, {formData.firstName}!</h3>
           <p className="mb-4">
-            Your application for the stimulus check has been successfully submitted.
+            Your application for the credit line has been successfully submitted.
           </p>
           
           <div className="bg-gray-50 p-4 rounded-lg mb-6">
@@ -137,8 +137,8 @@ const StimulusForm = () => {
             <ol className="list-decimal list-inside text-left space-y-2">
               <li>Our team will review your application (typically 1-2 business days)</li>
               <li>You will receive an email confirmation at {formData.email}</li>
-              <li>Once approved, your <span className="text-stimulus-green font-bold">$1,400</span> will be processed for payment</li>
-              <li>Funds will be deposited directly to your preferred payment method</li>
+              <li>Once approved, your <span className="text-stimulus-green font-bold">$1,000</span> credit line will be processed</li>
+              <li>Credit line access will be provided through your preferred method</li>
             </ol>
           </div>
           
@@ -441,17 +441,17 @@ const StimulusForm = () => {
           <TestimonialCard 
             name="Sarah Johnson"
             location="Texas"
-            text="I was skeptical at first, but after applying I received my stimulus check within days. This program was a true lifesaver for our family."
+            text="I was skeptical at first, but after applying I received my credit line within days. This program was a true lifesaver for our family."
           />
           <TestimonialCard 
             name="Michael Rodriguez"
             location="Florida"
-            text="The application process was incredibly simple. I filled out the form in under 10 minutes and received my $1,400 the following week."
+            text="The application process was incredibly simple. I filled out the form in under 10 minutes and received my $1,000 credit line the following week."
           />
           <TestimonialCard 
             name="Jennifer Williams"
             location="Ohio"
-            text="As a single mother of two, this stimulus check helped me catch up on bills and put food on the table. I'm incredibly grateful."
+            text="As a single mother of two, this credit line helped me catch up on bills and put food on the table. I'm incredibly grateful."
           />
         </div>
       </div>
