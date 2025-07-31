@@ -93,7 +93,7 @@ export const NotificationToast = () => {
   const currentNotification = notifications[currentIndex];
 
   return (
-    <div className="relative md:fixed md:top-20 md:right-4 z-40 animate-notification-slide mb-4 md:mb-0">
+    <div className="relative md:fixed md:top-20 md:right-4 z-40 animate-notification-slide mb-2 md:mb-0">
       <div className="bg-white shadow-md rounded-lg p-2 max-w-full md:max-w-xs border border-gray-100 text-xs mx-auto md:mx-0">
         <div className="flex items-center">
           <div className="bg-stimulus-green rounded-full p-0.5 mr-2">

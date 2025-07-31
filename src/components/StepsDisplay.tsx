@@ -28,7 +28,7 @@ const StepsDisplay = () => {
         </div>
 
         {/* CTA Button moved directly after steps */}
-        <div className="text-center mt-2">
+        <div className="text-center mt-1">
           <button 
             onClick={handleCheckEligibility} 
             className="w-full sm:w-4/5 md:w-3/5 lg:w-2/5 bg-stimulus-green hover:bg-stimulus-green/90 text-white font-bold text-xl py-4 px-6 rounded-lg shadow-lg transition-all duration-300"
