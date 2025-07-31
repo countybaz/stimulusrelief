@@ -15,10 +15,6 @@ const Header = () => {
               2025 <span className="text-stimulus-green font-black">$1,000</span> CREDIT LINE ASSISTANCE PROGRAM
             </h1>
           </div>
-          
-          <p className="text-sm sm:text-base mt-1 text-center max-w-xl text-gray-600">
-            Helping Americans claim their rightful stimulus assistance funds with a secure, trusted platform.
-          </p>
         </div>
       </div>
     </header>
