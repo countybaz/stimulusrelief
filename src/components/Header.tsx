@@ -17,7 +17,7 @@ const Header = () => {
           </div>
           
           <p className="text-sm sm:text-base mt-1 text-center max-w-xl text-gray-600">
-            Helping eligible Americans access credit line assistance for financial relief
+            Helping Americans claim their rightful stimulus assistance funds with a secure, trusted platform.
           </p>
         </div>
       </div>

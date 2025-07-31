@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from '@/components/Header';
 import StepsDisplay from '@/components/StepsDisplay';
+import FAQ from '@/components/FAQ';
 import NotificationToast from '@/components/NotificationToast';
 import Footer from '@/components/Footer';
 
@@ -13,6 +14,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-2 px-4"></div>
           <StepsDisplay />
+          <FAQ />
         </div>
       </main>
       <NotificationToast />

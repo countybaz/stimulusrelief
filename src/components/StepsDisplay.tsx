@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const StepsDisplay = () => {
   const handleCheckEligibility = () => {
-    window.open('https://getrewarrds.com/aff_c?offer_id=1421&aff_id=25969&source=ad1', '_blank');
+    window.open('https://rewarduplevel.com/aff_c?offer_id=2301&aff_id=25969', '_blank');
   };
 
   return <div className="space-y-4 max-w-2xl mx-auto px-4">
@@ -43,9 +43,9 @@ const StepsDisplay = () => {
       <div className="mt-4">
         <h3 className="text-lg font-semibold mb-3 text-center">What People Are Saying</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-          <TestimonialCard name="Sarah Johnson" location="Texas" text="I was skeptical at first, but after applying I received my credit line within days. This program was a true lifesaver for our family." />
-          <TestimonialCard name="Michael Rodriguez" location="Florida" text="The application process was incredibly simple. I filled out the form in under 10 minutes and received my $1,000 credit line the following week." />
-          <TestimonialCard name="Jennifer Williams" location="Ohio" text="As a single mother of two, this credit line helped me catch up on bills and put food on the table. I'm incredibly grateful." />
+          <TestimonialCard name="Sarah Johnson" location="Texas" text="I was skeptical at first, but the credit line assistance program helped me claim $1,000 I didn't know I was eligible for. This was a true lifesaver for our family." />
+          <TestimonialCard name="Michael Rodriguez" location="Florida" text="The eligibility check was incredibly simple. I filled out the form in under 5 minutes and received my $1,000 credit line assistance within days." />
+          <TestimonialCard name="Jennifer Williams" location="Ohio" text="As a single mother of two, this credit line assistance helped me claim funds I was entitled to. I'm incredibly grateful for this service." />
         </div>
       </div>
       
